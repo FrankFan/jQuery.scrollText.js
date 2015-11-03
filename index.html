@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.scrollText.js 预览</title>
+	<style>
+		body,html{
+			padding: 0;
+			margin: 0;
+		}
+		ul, li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-align: center;
+		}
+
+		.container {
+		    width: 500px;
+		    height: 26px;
+		    line-height: 30px;
+		    border: 1px solid green;
+		    overflow: Hidden;
+		    padding: 5px 0;
+		    margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li>习近平会见基辛格:中美要认识彼此战略意图</li>
+			<li>李克强：中国将进一步放宽外商投资准入门槛</li>
+			<li>"十三五"规划将出台渐进式延迟退休政策</li>
+			<li>腾讯错失OTA投资新美大 欲借王兴开启回天术</li>
+			<li>中国去年赴韩整形达5.6万人 失败率每年上升15%</li>
+			<li>PPTV连年巨亏却欲独立上市 想让股民当接盘侠</li>
+			<li>新浪全面停止社会招聘 或将被阿里巴巴收购</li>
+			<li>百度的底牌和掣肘：借助O2O实现逆袭</li>
+			<li>谷歌否认合并Android与Chrome OS 难以撼动微软地位</li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jQuery.scrollText.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".container").scrollText({
+				'duration': 2000
+			});
+		});
+	</script>
+</body>
+</html>
